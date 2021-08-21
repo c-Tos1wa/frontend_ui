@@ -26,7 +26,7 @@ export default function SideBar(props) {
           </nav>
         </div>
       </aside>
-      <div className="p-10 min-h-screen">
+      <div className="bg-gray-100 p-5 min-h-screen mb-10">
         <h2 className="text-4xl font-bold">{props.children}</h2>
       </div>
     </div>

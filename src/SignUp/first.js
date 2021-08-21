@@ -1,7 +1,7 @@
 import react from 'react';
-import Form from './form'
+import Form from '../form'
 
-export default function NewUser(props) {
+export default function First(props) {
   return (
     <div className="min-h-screen flex items-center justify-center">
       <div className="bg-white p-8 shadow-lg rounded">
@@ -13,7 +13,6 @@ export default function NewUser(props) {
             <Form label='sobrenome' type='text' placeholder='Sobrenome' />
             <Form label='email' type='email' placeholder='E-mail' />
             <Form label='telefone' type='text' placeholder='Telefone' />
-
           </div>
           
           <button className="bg-red-400 text-white text-lg border border-red-400 rounded p-2">Próximo</button>

@@ -1,18 +1,19 @@
 import SideBar from './sidebar';
-import NewUser from './signUp';
+import First from './SignUp/first';
+import Second from './SignUp/second';
+import Third from './SignUp/third';
+import SingleClient from './singleClient';
 
 function App() {
   return (
-  
-      <SideBar children='Cadastro'>
-        <NewUser number='1' />
-        <NewUser number='2' />
-        <NewUser number='3' />
+    <>
+      <SideBar children='Clientes'>
+        <SingleClient name='Cristina' />
       </SideBar>
      
       
       
-
+    </>
   );
 }
 
