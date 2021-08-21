@@ -3,7 +3,7 @@ import react from 'react';
 export default function SideBar(props) {
   return (
     <div className="flex min-h-screen">
-      <aside className="bg-red-400" w-64 min-h-screen flex flex-col>
+      <aside className="bg-red-400 w-64 min-h-screen flex flex-col">
         <span className="px-3 py-5 ">
           <img className="bg-red-400" src='./logoHi.png' alt='Logo da Helpie' />
         </span>
@@ -26,7 +26,9 @@ export default function SideBar(props) {
           </nav>
         </div>
       </aside>
-      <div>{props.children}</div>
+      <div className="p-10 min-h-screen">
+        <h2 className="text-4xl font-bold">{props.children}</h2>
+      </div>
     </div>
   )
 }
