@@ -1,6 +1,6 @@
 import react from 'react';
 
-export default function SideBar() {
+export default function SideBar(props) {
   return (
     <div className="flex min-h-screen">
       <aside className="bg-red-400" w-64 min-h-screen flex flex-col>
@@ -26,6 +26,7 @@ export default function SideBar() {
           </nav>
         </div>
       </aside>
+      <div>{props.children}</div>
     </div>
   )
 }

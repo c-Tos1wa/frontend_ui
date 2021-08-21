@@ -1,10 +1,14 @@
-import logo from './logo.svg';
 import SideBar from './sidebar';
-
+import NewUser from './newUser';
 
 function App() {
   return (
-   <SideBar />
+    <>
+      <SideBar children='Cadastro' />
+     
+      
+      
+   </>
   );
 }
 
