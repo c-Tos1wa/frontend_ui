@@ -1,19 +1,25 @@
 import SideBar from './sidebar';
-import First from './SignUp/first';
-import Second from './SignUp/second';
-import Third from './SignUp/third';
-import Example from './singleClient';
+import Sign from './SignUp';
+import ClientData from './singleClient';
+
+import {BrowserRouter, Route, Switch} from 'react-router-dom'
 
 function App() {
   return (
-    <>
-      <SideBar children='Clientes'>
-        <Example />
+    <div>
+      <SideBar>
+        <BrowserRouter>
+          <Switch>
+            <Route path="/" exact={true} component={Sign} />
+            <Route path="/cliente" component={ClientData} />
+          </Switch>
+        </BrowserRouter>
+
       </SideBar>
      
       
       
-    </>
+    </div>
   );
 }
 
