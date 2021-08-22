@@ -14,7 +14,7 @@ export default function Second(props) {
             <Form label='endereco2' type='email' placeholder='Endereço 2' />
           </div>
           
-          <button className="bg-red-400 text-white text-lg border border-red-400 rounded p-2">Próximo</button>
+          <button className="bg-red-400 text-white text-lg rounded p-2 hover:bg-purple-500">Próximo</button>
         </form>
       </div>
     </div>

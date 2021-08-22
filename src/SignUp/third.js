@@ -14,7 +14,7 @@ export default function Third(props) {
             <Form label='renda_mensal' type='number' placeholder='Renda Mensal' />
           </div>
           
-          <button className="bg-green-400 text-white text-lg border border-green-400 rounded p-2">Salvar</button>
+          <button className="bg-green-400 text-white text-lg rounded p-2 hover:bg-green-900">Salvar</button>
         </form>
       </div>
     </div>

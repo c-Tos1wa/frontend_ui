@@ -3,12 +3,12 @@ import react from 'react';
 export default function SideBar(props) {
   return (
     <div className="flex min-h-screen">
-      <aside className="bg-red-400 w-64 min-h-screen flex flex-col">
-        <span className="px-3 py-5 ">
+      <div className="bg-red-400 w-64 min-h-screen flex flex-col">
+        <span className="px-10 py-3 ">
           <img className="bg-red-400" src='./logoHi.png' alt='Logo da Helpie' />
         </span>
 
-        <div className="flex-grow">
+        <div className="flex-grow px-10">
           <nav className="px-3 text-white">
             <a href="#" className="flex items-center space-1 py-5">
               <svg className="w-8 h-8" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -25,8 +25,8 @@ export default function SideBar(props) {
             </a>
           </nav>
         </div>
-      </aside>
-      <div className="bg-gray-100 p-5 min-h-screen mb-10">
+      </div>
+      <div className="p-5">
         <h2 className="text-4xl font-bold">{props.children}</h2>
       </div>
     </div>
